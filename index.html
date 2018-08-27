@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.style.css">
+
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+    <script type="text/javascript" async
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
 </head>
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery  pace-done">
@@ -74,24 +83,7 @@
                 <p class="block-name"><span>1.</span> Abstract</p>
             </div>
             <div class="row">
-                <p class="content">Graphs have long been proposed as a tool to browse and navigate in a
-                    collection of
-                    documents in order to support exploratory search. Many techniques to automatically
-                    extract different types of graphs, showing for example entities or concepts and
-                    different relationships between them, have been suggested.
-                    While experimental evidence that they are indeed helpful
-                    exists for some of them, it is largely unknown which type
-                    of graph is most helpful for a speciﬁc exploratory task. However,
-                    carrying out experimental comparisons with human subjects is challenging
-                    and time-consuming.Towards this end, we present the GraphDocExplore framework.
-                    It provides an intuitive web interface for graph-based document exploration
-                    that is optimized for experimental user studies. Through a generic graph
-                    interface, different methods to extract graphs from text can be plugged
-                    into the system. Hence, they can be compared at minimal implementation
-                    effort in an environment that ensures controlled comparisons.
-                    The system is publicly available under an open-source license.
-                </p>
-
+                <p class="content">Abstract </p>
             </div>
         </div>
 </section>
@@ -106,9 +98,11 @@
                     <div class="animated fadeIn wow animated" data-wow-duration="1.5s"
                          style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
                         <div class="benefit">
+                            <h3 class="text-left " style="font-size: larger">Human-like Answering System </h3>
                             <p>Export data from databases, cloud data sources, public and private APIs and social
                                 networks. If your database or service is behind the
-                                firewall, we can install a small, zero-maintenance integration agent which will push data to the cloud.</p>
+                                firewall, we can install a small, zero-maintenance integration agent which will push
+                                data to the cloud.</p>
                             <div style="padding-top: 10px">
                                 <img src="css/system.jpg" align="center" width="90%">
                             </div>
@@ -137,6 +131,143 @@
 
                                 </ol>
                             </div>
+                            <h3 class="text-left " style="font-size: larger">An Example</h3>
+                            <div style="color: black !important;text-align: left !important;
+                            display: inline-block !important;text-indent: 0px !important;">
+                                <div style="font-size: 20px; padding-left: 5%" >Here is the function $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $.
+                                </div >
+                                <div style="font-size: 20px;padding-left: 5%">(1) Get the minimum cycle of function $ f(x) $.</div>
+                                <div style="font-size: 20px;padding-left: 5%">(2) Get the minimum value of function $ f(x) $ at $ [0,\frac{2π}{3}] $.</div>
+                                <p style="color: #0f0f0f;font-size: 21px; margin:20px 50px">
+                                    After being processed by NLP, we can get following relations.
+                                </p>
+                                <div style="margin: 20px 50px" class="row">
+                                    <table class="table table-hover table-bordered table-condensed "
+                                           style="text-indent: 0px; color: black">
+                                        <caption style="font-size: 25px;color: black" ><strong>Question Relations:</strong></caption>
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">NO.</th>
+                                            <th class="col-lg-9">Relations</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>CommonQustionRelations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                CommonFunctionRelation{function:$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>SubstemRelation:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>(1) None</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>SubConclusionRelation：</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>(1)
+                                                [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
+                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td>(2)
+                                                [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
+                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <p style="color: #0f0f0f;font-size: 21px; margin:0px 65px">
+                                        And,here is the solving result which contains a very detailed process of solving
+                                        problems.
+                                    </p>
+                                </div>
+                                <div class="row" style="margin: 20px 50px" >
+                                    <table class="table table-hover table-bordered table-condensed" style="text-indent: 0px">
+                                        <caption style="font-size: 25px;color: black"> <strong>AutoSolving Result:</strong></caption>
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">NO.</th>
+                                            <th class="col-lg-12">Solving Result</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div>
+                                                    (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (3)∴ we can get it from (2):  $ sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    <br>
+                                                    (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
+                                                    <br>
+                                                    (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3}  $<br>
+                                                    (7)∴ so,we can get the min cycle from (6): $ 2π $ is the min cycle of
+                                                    the function $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3}  $.<br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div>
+                                                    (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (3)∴ we can get it from (2):  $ sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    <br>
+                                                    (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
+                                                    <br>
+                                                    (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (7)∵ $ x∈[0,\frac{2π}{3}] $ <br>
+                                                    (8)∴ we can get it from (6) and (7): $ x+\frac{π}{3}∈[\frac{π}{3},π] $<br>
+                                                    (9)∴ we can get it from (8):$ 2sin(x-\frac{π}{3})-\sqrt{3}∈[-\sqrt{3},2-\sqrt{3}] $ <br>
+                                                    (10)∴so, we can get the min value from (9):The minimum value of $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $ at $ x=\frac{2π}{3} $.
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="content">
+                                        The above examples are presented in terms of natural language understanding and human-like problem solving.
+                                        First, we enter the question number to get the specific topic content. Secondly, the natural language processing
+                                        module analyzes and understands the topics and conclusions and translates them into corresponding knowledge relationships.
+                                        This forms the three relationships of CommonQustionRelations, SubstemRelation and SubConclusionRelation in
+                                        the Question Relations table, each of which contains one or more specific knowledge relationships.
+                                        Then, the reasoning module receives the result of the natural language processing,
+                                        and inserts the common problem, the sub-question and the sub-conclusion relationship
+                                        into the knowledge base for reasoning. We can see from the above AutoSolving Result
+                                        table that the solution process is based on a strict logical relationship step by step.
+                                        Finally stop the reasoning and output the result. This forms a complete solution process.
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -199,7 +330,10 @@
                 </div>
             </div>
             <div class="row" align="center">
-                <iframe height=540 width=960 src='https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=e7cce029df12c1500a390f6a00cad118&tvId=479817700&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%' frameborder=0 'allowfullscreen'>
+                <iframe height=540 width=960
+                        src='https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=e7cce029df12c1500a390f6a00cad118&tvId=479817700&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%'
+                        frameborder=0
+                'allowfullscreen'>
                 </iframe>
             </div>
         </div>
@@ -243,7 +377,11 @@
                 </div>
             </div>
             <p class="content">
-                This paper was in part supported by Grants from the Natural Science Foundation of China (No. 61572111), the National High Technology Research and Development Program of China (863 Program) (No. 2015AA015408), a 985 Project of UESTC (No. A1098531023601041) and a Fundamental Research Funds for the Central Universities of China (No.A03017023701). Gerard de Melo's research is funded in part by ARO grant no. W911NF-17-C-0098 (DARPA SocialSim program).
+                This paper was in part supported by Grants from the Natural Science Foundation of China (No. 61572111),
+                the National High Technology Research and Development Program of China (863 Program) (No. 2015AA015408),
+                a 985 Project of UESTC (No. A1098531023601041) and a Fundamental Research Funds for the Central
+                Universities of China (No.A03017023701). Gerard de Melo's research is funded in part by ARO grant no.
+                W911NF-17-C-0098 (DARPA SocialSim program).
             </p>
 
         </div>
