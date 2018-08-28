@@ -311,7 +311,7 @@ a:hover {
   }
 }
 
-/*  Dropdown Menu  */
+/*  Dropdown Menu  *//*
 .one-page-header .dropdown-menu,
 .one-page-header.top-nav-collapse .dropdown-menu {
   border: none;
@@ -397,7 +397,7 @@ a:hover {
   .one-page-header.top-nav-collapse .dropdown-menu > li > a:hover {
     color: #72c02c !important;
   }
-}
+}*/
 
 /*  Top Contacts Block  */
 .top-contact-block {

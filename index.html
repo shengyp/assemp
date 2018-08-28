@@ -23,7 +23,11 @@
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
   });
-</script>
+
+
+
+
+    </script>
     <script type="text/javascript" async
             src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
@@ -47,8 +51,19 @@
                     </li>
                     <li class="page-scroll"><a href="#solutions">About System</a>
                     </li>
+
+                    <li class="page-scroll">
+                        <a data-toggle="dropdown" href="#">
+                            Case Study <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#case">Algebra</a></li>
+                            <li><a href="#geometry">Geometry</a></li>
+                        </ul>
+                    </li>
                     <li class="page-scroll"><a href="#paperandvideo">paper and video</a>
                     </li>
+
                     <li class="page-scroll"><a href="#references">references</a>
                     </li>
                     <li class="page-scroll"><a href="#acknowledgement">Acknowledgement</a>
@@ -69,21 +84,24 @@
                         An Automatic Solving System for Elementary Mathematics Problems
                     </h2>
                     <p class="author"><strong> Xiuqin Zhong</strong> and <strong>Iryna Gurevych</strong></p>
-<!--                     <p class="orgnization">University of Electronic Science and Technology of China</p>
-                    <p class="orgnization">Department of Computer Science, Technische Universit¨ at Darmstadt</p> -->
-                	<span><a href="http://smilelab.uestc.edu.cn/members/shengyongpan/" class="author">Xiuqin Zhong</a><sup class="auther-order">1</sup></span>
-                	<span><a href="http://smilelab.uestc.edu.cn/members/xuzenglin/">Yongpan Sheng</a><sup class="auther-order">1,2</sup></span>
-                	<span><a href="">Yafang </a><sup class="auther-order">2</sup></span>
-                	<span><a href="">Xiangyu Zhang</a><sup class="auther-order">1</sup></span>
-                	<span><a href="http://gerard.demelo.org/">Gerard de Melo</a><sup class="auther-order">3</sup></span>
+                    <!--                     <p class="orgnization">University of Electronic Science and Technology of China</p>
+                                        <p class="orgnization">Department of Computer Science, Technische Universit¨ at Darmstadt</p> -->
+                    <span><a href="http://smilelab.uestc.edu.cn/members/shengyongpan/"
+                             class="author">Xiuqin Zhong</a><sup class="auther-order">1</sup></span>
+                    <span><a href="http://smilelab.uestc.edu.cn/members/xuzenglin/" class="author">Yongpan Sheng</a><sup
+                            class="auther-order">1,2</sup></span>
+                    <span><a href="" class="author">Yafang </a><sup class="auther-order">2</sup></span>
+                    <span><a href="" class="author">Xiangyu Zhang</a><sup class="auther-order">1</sup></span>
+                    <span><a href="http://gerard.demelo.org/" class="author">Gerard de Melo</a><sup
+                            class="auther-order">3</sup></span>
                 </div>
                 <p></p>
-             	<div class="auther-apart">
-                	<span><sup class="orgnization">1</sup><a href="http://www.uestc.edu.cn">University of Electronic Science and Technology of China, China</a></span>
-                	<span><sup class="orgnization">2</sup><a href="http://www.sdu.edu.cn/">University of New South Wales, Australia</a></span>
-            	</div>
-            	<p></p>
-            	<p></p>
+                <div class="auther-apart">
+                    <span><sup class="auther-order">1</sup><a href="http://www.uestc.edu.cn" class="orgnization">University of Electronic Science and Technology of China, China</a></span>
+                    <span><sup class="auther-order">2</sup><a href="http://www.sdu.edu.cn/" class="orgnization">University of New South Wales, Australia</a></span>
+                </div>
+                <p></p>
+                <p></p>
             </div>
         </div>
     </div>
@@ -143,14 +161,38 @@
 
                                 </ol>
                             </div>
-                            <h3 class="text-left " style="font-size: larger">An Example</h3>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="case">
+    <div class="container">
+        <div class="g-pt-70">
+            <div class="g-heading-v10 g-mb-30">
+                <p class="block-name"><span>3.</span> Case Study</p>
+            </div>
+            <div class="row">
+                <div class="content">
+                    <div class="benefit">
+                        <div>
+                            <h3 class="text-left " style="font-size: larger">3.1  Algebra Example</h3>
                             <div style="color: black !important;text-align: left !important;
-                            display: inline-block !important;text-indent: 0px !important;">
+                            display: inline-block !important; text-indent: 0px">
                                 <div class="questionboder">
-                                    <div style="font-size: 20px; margin: 20px 20px" >Here is the function $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $.
-                                    </div >
-                                    <div style="font-size: 20px;margin: 20px 20px">(1) Get the minimum cycle of function $ f(x) $.</div>
-                                    <div style="font-size: 20px;margin: 20px 20px">(2) Get the minimum value of function $ f(x) $ at $ [0,\frac{2π}{3}] $.</div>
+                                    <div style="font-size: 20px; margin: 20px 20px"> Here is the function $
+                                        f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $.
+                                    </div>
+                                    <div style="font-size: 20px;margin: 20px 20px"> (1) Get the minimum cycle of function
+                                        $ f(x) $.
+                                    </div>
+                                    <div style="font-size: 20px;margin: 20px 20px">(2) Get the minimum value of function
+                                        $ f(x) $ at $ [0,\frac{2π}{3}] $.
+                                    </div>
                                 </div>
 
                                 <p style="color: #0f0f0f;font-size: 21px; margin:20px 50px">
@@ -159,18 +201,20 @@
                                 <div style="margin: 20px 50px" class="row">
                                     <table class="table table-hover table-bordered table-condensed "
                                            style="text-indent: 0px; color: black">
-                                        <caption style="font-size: 25px;color: black" ><strong>Question Relations:</strong>
-                                            <button type="button" class="btn" data-toggle="collapse"  data-target="#table1">
+                                        <caption style="font-size: 25px;color: black"><strong>Question
+                                            Relations:</strong>
+                                            <button type="button" class="btn" data-toggle="collapse"
+                                                    data-target="#table1">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
                                         </caption>
-                                        <thead >
+                                        <thead>
                                         <tr>
                                             <th class="col-lg-1">NO.</th>
                                             <th class="col-lg-9">Relations</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="table1" class="collapse in">
+                                        <tbody id="table1" class="collapse">
                                         <tr>
                                             <td>1</td>
                                             <td>CommonQustionRelations:</td>
@@ -178,7 +222,8 @@
                                         <tr>
                                             <td>2</td>
                                             <td>
-                                                CommonFunctionRelation{function:$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
+                                                CommonFunctionRelation{function:$
+                                                f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
                                             </td>
                                         </tr>
                                         <tr>
@@ -222,11 +267,13 @@
                                         problems.
                                     </p>
                                 </div>
-                                <div class="row" style="margin: 20px 50px" >
-                                    <table class="table table-hover table-bordered table-condensed" style="text-indent: 0px">
+                                <div class="row" style="margin: 20px 50px">
+                                    <table class="table table-hover table-bordered table-condensed"
+                                           style="text-indent: 0px">
                                         <caption style="font-size: 25px;color: black">
                                             <strong>AutoSolving Result:</strong>
-                                            <button type="button" class="btn" data-toggle="collapse"  data-target="#table2">
+                                            <button type="button" class="btn" data-toggle="collapse"
+                                                    data-target="#table2">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
                                         </caption>
@@ -236,21 +283,25 @@
                                             <th class="col-lg-12">Solving Result</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="table2" class="collapse in">
+                                        <tbody id="table2" class="collapse">
                                         <tr>
                                             <td>1</td>
                                             <td>
                                                 <div>
                                                     (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
-                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
-                                                    (3)∴ we can get it from (2):  $ sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2}
+                                                    $<br>
+                                                    (3)∴ we can get it from (2): $
+                                                    sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
                                                     <br>
                                                     (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
                                                     <br>
                                                     (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
-                                                    (6)∴ we can get it from (1) and (5): $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3}  $<br>
-                                                    (7)∴ so,we can get the min cycle from (6): $ 2π $ is the min cycle of
-                                                    the function $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3}  $.<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) =
+                                                    2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (7)∴ so,we can get the min cycle from (6): $ 2π $ is the min cycle
+                                                    of
+                                                    the function $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $.<br>
                                                 </div>
                                             </td>
                                         </tr>
@@ -259,17 +310,205 @@
                                             <td>
                                                 <div>
                                                     (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
-                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
-                                                    (3)∴ we can get it from (2):  $ sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2}
+                                                    $<br>
+                                                    (3)∴ we can get it from (2): $
+                                                    sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
                                                     <br>
                                                     (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
                                                     <br>
                                                     (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
-                                                    (6)∴ we can get it from (1) and (5): $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) =
+                                                    2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
                                                     (7)∵ $ x∈[0,\frac{2π}{3}] $ <br>
-                                                    (8)∴ we can get it from (6) and (7): $ x+\frac{π}{3}∈[\frac{π}{3},π] $<br>
-                                                    (9)∴ we can get it from (8):$ 2sin(x-\frac{π}{3})-\sqrt{3}∈[-\sqrt{3},2-\sqrt{3}] $ <br>
-                                                    (10)∴so, we can get the min value from (9):The minimum value of $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $ at $ x=\frac{2π}{3} $.
+                                                    (8)∴ we can get it from (6) and (7): $ x+\frac{π}{3}∈[\frac{π}{3},π]
+                                                    $<br>
+                                                    (9)∴ we can get it from (8):$
+                                                    2sin(x-\frac{π}{3})-\sqrt{3}∈[-\sqrt{3},2-\sqrt{3}] $ <br>
+                                                    (10)∴so, we can get the min value from (9):The minimum value of $
+                                                    f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $ at $ x=\frac{2π}{3} $.
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row" >
+                                    <div class="content">
+                                        The above examples are presented in terms of natural language understanding and
+                                        human-like problem solving.
+                                        First, we enter the question number to get the specific topic content. Secondly,
+                                        the natural language processing
+                                        module analyzes and understands the topics and conclusions and translates them
+                                        into corresponding knowledge relationships.
+                                        This forms the three relationships of CommonQustionRelations, SubstemRelation
+                                        and SubConclusionRelation in
+                                        the Question Relations table, each of which contains one or more specific
+                                        knowledge relationships.
+                                        Then, the reasoning module receives the result of the natural language
+                                        processing,
+                                        and inserts the common problem, the sub-question and the sub-conclusion
+                                        relationship
+                                        into the knowledge base for reasoning. We can see from the above AutoSolving
+                                        Result
+                                        table that the solution process is based on a strict logical relationship step
+                                        by step.<div id="geometry"></div>
+                                        Finally stop the reasoning and output the result. This forms a complete solution
+                                        process.
+                                    </div>
+                                </div>
+                             </div>
+                            </div>
+                        <hr>
+                        <!-- 几何模块 -->
+                        <div style="margin-top: 30px" id="geometry">
+                            <h3 class="text-left " style="font-size: larger">3.2  Geometry Example</h3>
+                            <div style="color: black !important;text-align: left !important;
+                            display: inline-block !important;text-indent: 0px !important;">
+                                <div class="questionboder">
+                                    <div style="font-size: 20px; margin: 20px 20px">Here is the function $
+                                        f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $.
+                                    </div>
+                                    <div style="font-size: 20px;margin: 20px 20px">(1) Get the minimum cycle of function
+                                        $ f(x) $.
+                                    </div>
+                                    <div style="font-size: 20px;margin: 20px 20px">(2) Get the minimum value of function
+                                        $ f(x) $ at $ [0,\frac{2π}{3}] $.
+                                    </div>
+                                </div>
+
+                                <p style="color: #0f0f0f;font-size: 21px; margin:20px 50px">
+                                    After being processed by NLP, we can get following relations.
+                                </p>
+                                <div style="margin: 20px 50px" class="row">
+                                    <table class="table table-hover table-bordered table-condensed "
+                                           style="text-indent: 0px; color: black">
+                                        <caption style="font-size: 25px;color: black"><strong>Question
+                                            Relations:</strong>
+                                            <button type="button" class="btn" data-toggle="collapse"
+                                                    data-target="#table1">
+                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                            </button>
+                                        </caption>
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">NO.</th>
+                                            <th class="col-lg-9">Relations</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="table1" class="collapse">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>CommonQustionRelations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                CommonFunctionRelation{function:$
+                                                f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>SubstemRelation:</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>(1) None</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>SubConclusionRelation：</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>(1)
+                                                [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
+                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td>(2)
+                                                [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
+                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <p style="color: #0f0f0f;font-size: 21px; margin:0px 65px">
+                                        And,here is the solving result which contains a very detailed process of solving
+                                        problems.
+                                    </p>
+                                </div>
+                                <div class="row" style="margin: 20px 50px">
+                                    <table class="table table-hover table-bordered table-condensed"
+                                           style="text-indent: 0px">
+                                        <caption style="font-size: 25px;color: black">
+                                            <strong>AutoSolving Result:</strong>
+                                            <button type="button" class="btn" data-toggle="collapse"
+                                                    data-target="#table2">
+                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                            </button>
+                                        </caption>
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-1">NO.</th>
+                                            <th class="col-lg-12">Solving Result</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="table2" class="collapse">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div>
+                                                    (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2}
+                                                    $<br>
+                                                    (3)∴ we can get it from (2): $
+                                                    sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    <br>
+                                                    (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
+                                                    <br>
+                                                    (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) =
+                                                    2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (7)∴ so,we can get the min cycle from (6): $ 2π $ is the min cycle
+                                                    of
+                                                    the function $ f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $.<br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div>
+                                                    (1)∵ $ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $<br>
+                                                    (2)∴ we can get it from (1): $ sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2}
+                                                    $<br>
+                                                    (3)∴ we can get it from (2): $
+                                                    sin(x)-2\sqrt{3}+2\sqrt{3}*cos(\frac{x}{2}) $
+                                                    <br>
+                                                    (4)∴ we can get it from (3): $ sin(x)-\sqrt{3}+\sqrt{3}*cos(x) $
+                                                    <br>
+                                                    (5)∴ we can get it from (4): $ 2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (6)∴ we can get it from (1) and (5): $ f(x) =
+                                                    2*sin(x-\frac{π}{3})-\sqrt{3} $<br>
+                                                    (7)∵ $ x∈[0,\frac{2π}{3}] $ <br>
+                                                    (8)∴ we can get it from (6) and (7): $ x+\frac{π}{3}∈[\frac{π}{3},π]
+                                                    $<br>
+                                                    (9)∴ we can get it from (8):$
+                                                    2sin(x-\frac{π}{3})-\sqrt{3}∈[-\sqrt{3},2-\sqrt{3}] $ <br>
+                                                    (10)∴so, we can get the min value from (9):The minimum value of $
+                                                    f(x) = 2*sin(x-\frac{π}{3})-\sqrt{3} $ at $ x=\frac{2π}{3} $.
                                                 </div>
                                             </td>
                                         </tr>
@@ -278,16 +517,26 @@
                                 </div>
                                 <div class="row">
                                     <div class="content">
-                                        The above examples are presented in terms of natural language understanding and human-like problem solving.
-                                        First, we enter the question number to get the specific topic content. Secondly, the natural language processing
-                                        module analyzes and understands the topics and conclusions and translates them into corresponding knowledge relationships.
-                                        This forms the three relationships of CommonQustionRelations, SubstemRelation and SubConclusionRelation in
-                                        the Question Relations table, each of which contains one or more specific knowledge relationships.
-                                        Then, the reasoning module receives the result of the natural language processing,
-                                        and inserts the common problem, the sub-question and the sub-conclusion relationship
-                                        into the knowledge base for reasoning. We can see from the above AutoSolving Result
-                                        table that the solution process is based on a strict logical relationship step by step.
-                                        Finally stop the reasoning and output the result. This forms a complete solution process.
+                                        The above examples are presented in terms of natural language understanding and
+                                        human-like problem solving.
+                                        First, we enter the question number to get the specific topic content. Secondly,
+                                        the natural language processing
+                                        module analyzes and understands the topics and conclusions and translates them
+                                        into corresponding knowledge relationships.
+                                        This forms the three relationships of CommonQustionRelations, SubstemRelation
+                                        and SubConclusionRelation in
+                                        the Question Relations table, each of which contains one or more specific
+                                        knowledge relationships.
+                                        Then, the reasoning module receives the result of the natural language
+                                        processing,
+                                        and inserts the common problem, the sub-question and the sub-conclusion
+                                        relationship
+                                        into the knowledge base for reasoning. We can see from the above AutoSolving
+                                        Result
+                                        table that the solution process is based on a strict logical relationship step
+                                        by step.
+                                        Finally stop the reasoning and output the result. This forms a complete solution
+                                        process.
                                     </div>
                                 </div>
                             </div>
@@ -295,59 +544,62 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </section>
+
 <section id="paperandvideo">
     <div class="container-fluid with-bg-1">
         <div class="container">
             <div class="features">
-                <div class="g-heading-v10 g-mb-30 ">
-                    <p class="block-name"><span>3.</span> Paper And Video</p>
-                </div>
-                <div class="row" style="margin-bottom:0">
-                    <div class="col-md-6">
-                        <div class="features-text">
-                            <div class="row">
-                                <div class="col-md-11 col-lg-offset-1">
-                                    <div class="feature-shortinfo-text">
-                                        <h2>Explore data sources</h2>
-                                        <p> Explore data sources and their structure, regardless of the format or
-                                            location. Use it to develop and debug data integration flows. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-11 col-lg-offset-1">
-                                    <div class="feature-shortinfo-text">
-                                        <h2>Explore data sources</h2>
-                                        <p> Explore data sources and their structure, regardless of the format or
-                                            location. Use it to develop and debug data integration flows. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-11 col-lg-offset-1">
-                                    <div class="feature-shortinfo-text">
-                                        <h2>Explore data sources</h2>
-                                        <p> Explore data sources and their structure, regardless of the format or
-                                            location. Use it to develop and debug data integration flows. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="g-pt-70 g-pb-30">
+                    <div class="g-heading-v10 g-mb-30 ">
+                        <p class="block-name"><span>4.</span> Paper And Video</p>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="features-img overflow-h">
-                                <a href="paper1.pdf" download="" title="paper1(1.11MB)">
-                                    <img class="img-responsive animated slideInLeft wow animated"
-                                         src="css/paper_surface.png"
-                                         alt="" style="visibility: visible; animation-name: slideInLeft; height: 480px">
-                                </a>
+                    <div class="row" style="margin-bottom:0">
+                        <div class="col-md-6">
+                            <div class="features-text">
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-offset-1">
+                                        <div class="feature-shortinfo-text">
+                                            <h2>Explore data sources</h2>
+                                            <p> Explore data sources and their structure, regardless of the format or
+                                                location. Use it to develop and debug data integration flows. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-offset-1">
+                                        <div class="feature-shortinfo-text">
+                                            <h2>Explore data sources</h2>
+                                            <p> Explore data sources and their structure, regardless of the format or
+                                                location. Use it to develop and debug data integration flows. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-11 col-lg-offset-1">
+                                        <div class="feature-shortinfo-text">
+                                            <h2>Explore data sources</h2>
+                                            <p> Explore data sources and their structure, regardless of the format or
+                                                location. Use it to develop and debug data integration flows. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="features-img overflow-h">
+                                    <a href="paper1.pdf" download="" title="paper1(1.11MB)">
+                                        <img class="img-responsive animated slideInLeft wow animated"
+                                             src="css/paper_surface.png"
+                                             alt=""
+                                             style="visibility: visible; animation-name: slideInLeft; height: 480px">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -370,7 +622,7 @@
         <div>
             <div class="subscribe">
                 <div class="g-heading-v10 g-mb-30 ">
-                    <p class="block-name"><span>4.</span> References</p>
+                    <p class="block-name"><span>5.</span> References</p>
                 </div>
                 <div class="row equal-height-columns">
                     <div class="content">
@@ -397,7 +649,7 @@
         <div class="whats-new">
             <div class="g-heading-v10 g-mb-10 text-center">
                 <div class="g-heading-v10 g-mb-30 ">
-                    <p class="block-name"><span>5.</span> Acknowledgement</p>
+                    <p class="block-name"><span>6.</span> Acknowledgement</p>
                 </div>
             </div>
             <p class="content">
@@ -418,9 +670,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="g-heading-v10 g-mb-65 " style="margin-bottom: 10px;">
-                            <h3 style="font-size: 30px;color: black">6. Contact us -- Questions and Inquiries
+                            <h3 style="font-size: 30px;color: black; padding-left: 19px;">7. Contact us -- Questions and
+                                Inquiries
                             </h3>
-                            <div style="margin-left: 40px">
+                            <div style="margin-left: 50px">
                                 <p>Email: <a style="color:#4a4848" href="#">123@123.com</a>
                                 </p>
                                 <p>TEL: 877733737</p>
