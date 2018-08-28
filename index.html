@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.style.css">
-
+    <script src="css/jquery-2.1.1.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
     <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
@@ -144,14 +145,18 @@
                                 <div style="margin: 20px 50px" class="row">
                                     <table class="table table-hover table-bordered table-condensed "
                                            style="text-indent: 0px; color: black">
-                                        <caption style="font-size: 25px;color: black" ><strong>Question Relations:</strong></caption>
-                                        <thead>
+                                        <caption style="font-size: 25px;color: black" ><strong>Question Relations:</strong>
+                                            <button type="button" class="btn" data-toggle="collapse"  data-target="#table1">
+                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                            </button>
+                                        </caption>
+                                        <thead >
                                         <tr>
                                             <th class="col-lg-1">NO.</th>
                                             <th class="col-lg-9">Relations</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="table1" class="collapse in">
                                         <tr>
                                             <td>1</td>
                                             <td>CommonQustionRelations:</td>
@@ -205,14 +210,19 @@
                                 </div>
                                 <div class="row" style="margin: 20px 50px" >
                                     <table class="table table-hover table-bordered table-condensed" style="text-indent: 0px">
-                                        <caption style="font-size: 25px;color: black"> <strong>AutoSolving Result:</strong></caption>
+                                        <caption style="font-size: 25px;color: black">
+                                            <strong>AutoSolving Result:</strong>
+                                            <button type="button" class="btn" data-toggle="collapse"  data-target="#table2">
+                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                            </button>
+                                        </caption>
                                         <thead>
                                         <tr>
                                             <th class="col-lg-1">NO.</th>
                                             <th class="col-lg-12">Solving Result</th>
                                         </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="table2" class="collapse in">
                                         <tr>
                                             <td>1</td>
                                             <td>
