@@ -136,7 +136,7 @@
                             <div style="padding-top: 10px">
                                 <img src="css/system.jpg" align="center" width="90%">
                             </div>
-                            <div style="padding-top: 15px;text-align: left;text-indent: 0em;margin: 30px;">
+                            <div style="padding-top: 15px;text-align: left;text-indent: 0em;margin-left: 30px;">
                                 <ol>
                                     <li class="imagelist">User interface: After entering a search term (1), the system
                                         displays retrieved documents
@@ -198,68 +198,72 @@
                                 <p style="color: #0f0f0f;font-size: 21px; margin:20px 50px">
                                     After being processed by NLP, we can get following relations.
                                 </p>
-                                <div style="margin: 20px 50px" class="row">
-                                    <table class="table table-hover table-bordered table-condensed "
-                                           style="text-indent: 0px; color: black">
-                                        <caption style="font-size: 25px;color: black"><strong>Question
+                                <div>
+                                    <div style="margin: 20px 50px">
+                                        <p style="font-size: 21px;color: black"><strong>Question
                                             Relations:</strong>
                                             <button type="button" class="btn" data-toggle="collapse"
                                                     data-target="#table1">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
-                                        </caption>
-                                        <thead>
-                                        <tr>
-                                            <th class="col-lg-1">NO.</th>
-                                            <th class="col-lg-9">Relations</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody id="table1" class="collapse">
-                                        <tr>
-                                            <td>1</td>
-                                            <td>CommonQustionRelations:</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>
-                                                CommonFunctionRelation{function:$
-                                                f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SubstemRelation:</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>(1) None</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>SubConclusionRelation：</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>(1)
-                                                [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
-                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
-                                            </td>
-                                        </tr>
+                                        </p>
+                                    </div>
+                                    <div  id="table1" class="collapse"  style="margin: 20px 50px">
+                                        <table class="table table-hover table-bordered table-condensed "
+                                               style="text-indent: 0px; color: black" >
+                                            <thead>
+                                            <tr>
+                                                <th class="col-lg-1">NO.</th>
+                                                <th class="col-lg-9">Relations</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody >
+                                            <tr>
+                                                <td>1</td>
+                                                <td>CommonQustionRelations:</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    CommonFunctionRelation{function:$
+                                                    f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>SubstemRelation:</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>(1) None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>SubConclusionRelation：</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>(1)
+                                                    [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
+                                                    <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                            <td>8</td>
-                                            <td>(2)
-                                                [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
-                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>(2)
+                                                    [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
+                                                    <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                                </td>
+                                            </tr>
 
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <p style="color: #0f0f0f;font-size: 21px; margin:0px 65px">
@@ -267,23 +271,27 @@
                                         problems.
                                     </p>
                                 </div>
-                                <div class="row" style="margin: 20px 50px">
-                                    <table class="table table-hover table-bordered table-condensed"
-                                           style="text-indent: 0px">
-                                        <caption style="font-size: 25px;color: black">
-                                            <strong>AutoSolving Result:</strong>
+                                <div>
+                                    <div style="margin: 20px 50px">
+                                        <p style="font-size: 21px;color: black"><strong>AutoSolving Result:</strong>
                                             <button type="button" class="btn" data-toggle="collapse"
                                                     data-target="#table2">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
-                                        </caption>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div style="margin: 20px 50px" id="table2" class="collapse">
+                                    <table class="table table-hover table-bordered table-condensed"
+                                           style="text-indent: 0px">
                                         <thead>
                                         <tr>
                                             <th class="col-lg-1">NO.</th>
                                             <th class="col-lg-12">Solving Result</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="table2" class="collapse">
+                                        <tbody >
                                         <tr>
                                             <td>1</td>
                                             <td>
@@ -334,7 +342,7 @@
                                     </table>
                                 </div>
                                 <div class="row" >
-                                    <div class="content">
+                                    <div style="font-size: 21px; padding-left: 65px !important; padding-right: 65px !important;"  class="content">
                                         The above examples are presented in terms of natural language understanding and
                                         human-like problem solving.
                                         First, we enter the question number to get the specific topic content. Secondly,
@@ -352,7 +360,7 @@
                                         into the knowledge base for reasoning. We can see from the above AutoSolving
                                         Result
                                         table that the solution process is based on a strict logical relationship step
-                                        by step.<div id="geometry"></div>
+                                        by step.<label id="geometry"></label>
                                         Finally stop the reasoning and output the result. This forms a complete solution
                                         process.
                                     </div>
@@ -366,10 +374,10 @@
                             <div style="color: black !important;text-align: left !important;
                             display: inline-block !important;text-indent: 0px !important;">
                                 <div class="questionboder">
-                                    <div style="font-size: 20px; margin: 20px 20px">Here is the function $
+                                    <div style="font-size: 20px; margin: 20px 20px"> Here is the function $
                                         f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $.
                                     </div>
-                                    <div style="font-size: 20px;margin: 20px 20px">(1) Get the minimum cycle of function
+                                    <div style="font-size: 20px;margin: 20px 20px"> (1) Get the minimum cycle of function
                                         $ f(x) $.
                                     </div>
                                     <div style="font-size: 20px;margin: 20px 20px">(2) Get the minimum value of function
@@ -380,68 +388,72 @@
                                 <p style="color: #0f0f0f;font-size: 21px; margin:20px 50px">
                                     After being processed by NLP, we can get following relations.
                                 </p>
-                                <div style="margin: 20px 50px" class="row">
-                                    <table class="table table-hover table-bordered table-condensed "
-                                           style="text-indent: 0px; color: black">
-                                        <caption style="font-size: 25px;color: black"><strong>Question
+                                <div>
+                                    <div style="margin: 20px 50px">
+                                        <p style="font-size: 21px;color: black"><strong>Question
                                             Relations:</strong>
                                             <button type="button" class="btn" data-toggle="collapse"
-                                                    data-target="#table1">
+                                                    data-target="#table3">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
-                                        </caption>
-                                        <thead>
-                                        <tr>
-                                            <th class="col-lg-1">NO.</th>
-                                            <th class="col-lg-9">Relations</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody id="table1" class="collapse">
-                                        <tr>
-                                            <td>1</td>
-                                            <td>CommonQustionRelations:</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>
-                                                CommonFunctionRelation{function:$
-                                                f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>SubstemRelation:</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>(1) None</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>SubConclusionRelation：</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>(1)
-                                                [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
-                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
-                                            </td>
-                                        </tr>
+                                        </p>
+                                    </div>
+                                    <div  id="table3" class="collapse"  style="margin: 20px 50px">
+                                        <table class="table table-hover table-bordered table-condensed "
+                                               style="text-indent: 0px; color: black" >
+                                            <thead>
+                                            <tr>
+                                                <th class="col-lg-1">NO.</th>
+                                                <th class="col-lg-9">Relations</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody >
+                                            <tr>
+                                                <td>1</td>
+                                                <td>CommonQustionRelations:</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    CommonFunctionRelation{function:$
+                                                    f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>SubstemRelation:</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>(1) None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>(2)$ x∈[0,\frac{2π}{3}] $</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>SubConclusionRelation：</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>(1)
+                                                    [SolutionConclusionRelation{relation:getMinClycle，CommonFunctionRelation{function:
+                                                    <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                                </td>
+                                            </tr>
 
-                                        <tr>
-                                            <td>8</td>
-                                            <td>(2)
-                                                [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
-                                                <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>(2)
+                                                    [SolutionConclusionRelation{relation:getMinValue，CommonFunctionRelation{function:
+                                                    <br>$ f(x)=sin(x)-2\sqrt{3}*sin(\frac{x}{2})^{2} $,definitionDomain:R}}]
+                                                </td>
+                                            </tr>
 
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <p style="color: #0f0f0f;font-size: 21px; margin:0px 65px">
@@ -449,23 +461,27 @@
                                         problems.
                                     </p>
                                 </div>
-                                <div class="row" style="margin: 20px 50px">
-                                    <table class="table table-hover table-bordered table-condensed"
-                                           style="text-indent: 0px">
-                                        <caption style="font-size: 25px;color: black">
-                                            <strong>AutoSolving Result:</strong>
+                                <div>
+                                    <div style="margin: 20px 50px">
+                                        <p style="font-size: 21px;color: black"><strong>AutoSolving Result:</strong>
                                             <button type="button" class="btn" data-toggle="collapse"
-                                                    data-target="#table2">
+                                                    data-target="#table4">
                                                 <span class="glyphicon glyphicon-chevron-down"></span>
                                             </button>
-                                        </caption>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div style="margin: 20px 50px" id="table4" class="collapse">
+                                    <table class="table table-hover table-bordered table-condensed"
+                                           style="text-indent: 0px">
                                         <thead>
                                         <tr>
                                             <th class="col-lg-1">NO.</th>
                                             <th class="col-lg-12">Solving Result</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="table2" class="collapse">
+                                        <tbody >
                                         <tr>
                                             <td>1</td>
                                             <td>
@@ -515,8 +531,8 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="row">
-                                    <div class="content">
+                                <div class="row" >
+                                    <div style="font-size: 21px; padding-left: 65px !important; padding-right: 65px !important;"  class="content">
                                         The above examples are presented in terms of natural language understanding and
                                         human-like problem solving.
                                         First, we enter the question number to get the specific topic content. Secondly,
@@ -534,11 +550,12 @@
                                         into the knowledge base for reasoning. We can see from the above AutoSolving
                                         Result
                                         table that the solution process is based on a strict logical relationship step
-                                        by step.
+                                        by step.<label id="geometry"></label>
                                         Finally stop the reasoning and output the result. This forms a complete solution
                                         process.
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -606,16 +623,14 @@
                 </div>
             </div>
             <div class="row" align="center">
-                <iframe height=540 width=960
+               <!-- <iframe height=540 width=960
                         src='https://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=e7cce029df12c1500a390f6a00cad118&tvId=479817700&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%'
                         frameborder=0
                 'allowfullscreen'>
-                </iframe>
+                </iframe>-->
             </div>
         </div>
     </div>
-
-
 </section>
 <section id="references">
     <div class="container">
@@ -659,7 +674,6 @@
                 Universities of China (No.A03017023701). Gerard de Melo's research is funded in part by ARO grant no.
                 W911NF-17-C-0098 (DARPA SocialSim program).
             </p>
-
         </div>
     </div>
 </section>
@@ -670,14 +684,14 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="g-heading-v10 g-mb-65 " style="margin-bottom: 10px;">
-                            <h3 style="font-size: 30px;color: black; padding-left: 19px;">7. Contact us -- Questions and
-                                Inquiries
+                            <h3 style="font-size: 30px;color: black; padding-left: 19px;">7. Contact us
                             </h3>
-                            <div style="margin-left: 50px">
-                                <p>Email: <a style="color:#4a4848" href="#">123@123.com</a>
+                            <div style="margin-left: 50px;font-size: 15px">
+                                <p>If you are interested in our works or have any problem, do not hesitate to contact our group.</p>
+                                <p>Email: <a style="color:#4a4848" href="#">zhongxiuqin@uestc.edu.cn</a>
                                 </p>
-                                <p>TEL: 877733737</p>
-                                <p>Address:UESTC</p>
+                                <p>TEL: 028-xxxxxxxx</p>
+                                <p>Address:UESTC CCSE</p>
                             </div>
 
                         </div>
